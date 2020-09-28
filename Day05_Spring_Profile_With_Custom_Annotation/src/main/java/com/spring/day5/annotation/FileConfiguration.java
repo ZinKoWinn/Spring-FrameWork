@@ -6,17 +6,17 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 /*
-  Annotation တစ္ခုတည္ေဆာက္မယ္ဆိုရင္ @Interface ကို အသုံးျပဳၿပီး တည္ေဆာက္ရပါတယ္။
-  သူ႕ရဲ႕ Method မွာ Parameter ထည့္လို႕ မရဘူး၊ Exception throw လုပ္လို႕မရဘူး၊
+   Annotation တစ်ခုတည်ဆောက်မယ်ဆိုရင် @Interface ကို အသုံးပြုပြီး တည်ဆောက်ရပါတယ်။
+  သူ့ရဲ့ Method မှာ Parameter ထည့်လို့ မရဘူး၊ Exception throw လုပ်လို့မရဘူး၊
 
-  ထို႕အျပင္ Custom annotation တစ္ခု တည္ေဆာက္မယ္ဆိုရင္ metadata လိုတယ္ -
-  ၁. @Retention(RetentionPolicy) -> တည္ေဆာက္လိုက္တဲ႕ Annotation ကို ဘယ္အခ်ိန္မွာ သုံးမလဲ သတ္မွတ္ေပး၊
-  ၂. @Target(ElementType) -> ဒီ Annotation ကို ဘယ္ေနရာမွာ သုံးမလဲ သတ္မွတ္ေပးရပါမယ္။
+  ထို့အပြင် Custom annotation တစ်ခု တည်ဆောက်မယ်ဆိုရင် metadata လိုတယ် -
+  ၁. @Retention(RetentionPolicy) -> တည်ဆောက်လိုက်တဲ့ Annotation ကို ဘယ်အချိန်မှာ သုံးမလဲ သတ်မှတ်ပေး၊
+  ၂. @Target(ElementType) -> ဒီ Annotation ကို ဘယ်နေရာမှာ သုံးမလဲ သတ်မှတ်ပေးရပါမယ်။
 
-  * RetentionPolicy သုံးမ်ဳိးရွိပါတယ္။
-  - SOURCE   -> SOURCE ဆိုတာက ေတာ့ Source level သာအသုံးျပဴၿပီး CompileTime မွာေရာ RunTime မွာေရာ အလုပ္လုပ္မွာ မဟုတ္ပါဘူး။
-  - CLASS    -> CLASS ဆိုတာက ေတာ့ CompileTime မွာ ေတာ့ အလုပ္လုပ္ၿပီး RunTime မွာေတာ့ အလုပ္လုပ္မွာ မဟုတ္ပါဘူး။
-  - RUNTIME  -> RUNTIME ဆိုတာက ေတာ့ Runtime မွာ သုံးဖို႔ ျဖစ္ပါတယ္။
+  * RetentionPolicy သုံးမျိုးရှိပါတယ်။
+  - SOURCE   -> SOURCE ဆိုတာက တော့ Source level သာအသုံးပြူပြီး CompileTime မှာရော RunTime မှာရော အလုပ်လုပ်မှာ မဟုတ်ပါဘူး။
+  - CLASS    -> CLASS ဆိုတာက တော့ CompileTime မှာ တော့ အလုပ်လုပ်ပြီး RunTime မှာတော့ အလုပ်လုပ်မှာ မဟုတ်ပါဘူး။
+  - RUNTIME  -> RUNTIME ဆိုတာက တော့ Runtime မှာ သုံးဖို့ ဖြစ်ပါတယ်။
 
  */
 
