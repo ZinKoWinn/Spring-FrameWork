@@ -66,8 +66,7 @@ public class CurrenciesServiceAspect {
     public void stringAndIntArgumentMethodPointCut() {
 
     }
-
-    //@After("stringAndIntArgumentMethodPointCut()")
+    @After("stringAndIntArgumentMethodPointCut()")
     public void afterStringAndIntArgumentMethodAdvice(JoinPoint joinPoint) {
         System.out.println("After - stringAndIntArgumentMethodPointCut()" + joinPoint.getSignature());
     }
@@ -77,7 +76,7 @@ public class CurrenciesServiceAspect {
 
     }
 
-    // @After("validatedArgumentPointCut()")
+    @After("validatedArgumentPointCut()")
     public void afterValidatedArgumentAdvice() {
         System.out.println("After - validatedArgumentPointCut()");
     }
